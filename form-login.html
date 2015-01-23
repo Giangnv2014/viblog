@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Viblo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/form-login.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="tabs">
+    <div class="tab">
+      <input id ="tab1" type="radio" name="tab" checked>
+      <label class="tab-header" for="tab1">Login</label>
+      <div class="content">
+        <span class="modal-close"></span>
+        <div class="row box-login">
+          <form class="col-lg-6">
+            <div class="input-text form user">
+              <span>User name or email*</span>
+              <input class="form-control" name="username" type="text">
+            </div>
+            <div class="pass">
+              <span>Password*</span>
+              <input class="form-control" name="password" type="password" value="">
+            </div>
+            <input class="login" type="submit" value="Login">
+            <div class="checkbox">
+              <label>
+                <input checked="checked" name="remember" type="checkbox" value="1">
+                <span>Remember me</span>
+              </label>
+            </div>
+            <div class="clear-both"></div>
+            <div class="forgot-pass">
+              <a href="#">Forgot Password!</a>
+            </div>
+          </form>
+          <div class="col-lg-6 group-social">
+            <span>For faster checkout, login or register using your social account.</span>
+            <div class="list-social">
+              <a href="#" class="facebook"></a>
+              <a href="#" class="google"></a>
+              <a href="#" class="github"></a>
+            </div>
+          </div>
+        </div>
+        <div class="send-pass">
+          <form>
+          <div class="forgot-pass">
+              <span>Forgot Password!</span>
+            </div>
+          <div class="input-text form user">
+            <span>Email*</span>
+            <input class="form-control" name="username" type="text">
+          </div>
+          <input class="login" type="submit" value="send">
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="tab signup">
+      <input id ="tab2" type="radio" name="tab">
+      <label class="tab-header" for="tab2">Signup</label>
+      <div class="content">
+        <form>
+          <span class="modal-close"><i class="fa fa-times"></i></span>
+          <div class="input-text form user">
+            <span>User login**</span>
+            <input class="form-control" name="username" type="text">
+          </div>
+          <div class="pass">
+            <span>Password*</span>
+            <input class="form-control" name="password" type="password" value="">
+          </div>
+          <div class="pass">
+            <span>Confirm Password*</span>
+            <input class="form-control" name="password" type="password" value="">
+          </div>
+          <div class="input-text form user">
+            <span>Email*</span>
+            <input class="form-control" name="username" type="text">
+          </div>
+          <input class="login" type="submit" value="signup">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

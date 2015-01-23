@@ -1,0 +1,87 @@
+.box-group {
+	.post-left {
+		.list-group {
+			.row {
+				margin-bottom: 30px;
+				color: #333;
+				a {
+					color: #333;
+					img {
+						//width: 140px;
+						width: 100%;
+						height: 140px;
+						border-radius: 3px;
+						background-repeat: no-repeat !important;
+						background-size: auto 100% !important;
+						background-position: center center !important;
+						transition: background-size 0.2s ease-in;
+						-moz-transition: background-size 0.2s ease-in;
+						-ms-transition: background-size 0.2s ease-in;
+						-o-transition: background-size 0.2s ease-in;
+						-webkit-transition: background-size 0.2s ease-in;
+					}
+					&:hover img {
+						background-size: auto 110% !important;
+					}
+				}
+				.name-group {
+					display: block;
+					font-size: 25px;
+					font-weight: 300;
+					line-height: 30px;
+				}
+				.email {
+					margin-bottom: 10px;
+					display: block;
+					font-size: 13px;
+					color: #57b8b7;
+				}
+				.content {
+					font-size: 14px;
+					line-height: 15px;
+					margin-bottom: 10px;
+					height: 45px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.btn-j-p-m {
+					form {
+						float: left;
+					}
+					.number {
+						float: right;
+						a {
+							color: #999;
+							font-size: 15px;
+							font-weight: 300;
+							&:hover {
+								color: #0fa19f;
+							}
+							&.number-post {
+								margin-right: 20px;
+								padding-left: 20px;
+								background: url(../img/icon-post.png) no-repeat center left;
+								&:hover {
+									background: url(../img/icon-post-hover.png) no-repeat center left;
+								}
+							}
+							&.number-follow {
+								padding-left: 42px;
+								background: url(../img/icon-member.png) no-repeat center left;
+								&:hover {
+									background: url(../img/icon-member-hover.png) no-repeat center left;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.post-right {
+		margin-top: 30px;
+	}
+	.load-more {
+		margin-top: 60px;
+	}
+}
