@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Viblo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/post-detail-sweetalert.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/top.css">
+  <link rel="stylesheet" type="text/css" href="css/post-detail.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+  <script src="js/sweet-alert.min.js"></script>
+  <script src="js/sweet-alert.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+      <div class="container">
+          <a id="logo" href="#"><img src="img/logo.png" alt="logo"></a>
+        </h1>
+        <div class="navbar-centure">
+          <ul>
+            <li><a href="#">feed</a></li>
+            <li><a href="#">all</a></li>
+            <li><a href="#">favorite</a></li>
+            <li class="last"><a href="#">group</a></li>
+            <div class="clear-both"></div>
+          </ul>
+          <div class="clear-both"></div>
+        </div>
+        <div class="navbar-search">
+            <div class="btn-post">
+              <a href="#">post</a>
+            </div>
+            <form>
+              <input type="text" name="s" value="Search...">
+              <a href="#"><img src="img/btn-header-search.png"></a>
+            </form>
+            <div class="user-menu">
+              <div class="btn-ringstone">
+                <div class="notify">99</div>
+                <div class="notify-down">
+                  <p>Your notifications</p>
+                  <a class="notify-setting" href="#"></a>
+                  <div class="notify-list">
+                    <div class="notify-avar" style="background: url(img/avar-1.jpg)"></div>
+                    <div class="notify-n-t">
+                      <div class="notify-name">
+                        <a href="#">Yushi Fukada</a>&nbsp;<span>follow you</span>
+                      </div>
+                      <span class="notify-time">10 days ago</span>
+                    </div>
+                    <div class="clear-both"></div>
+                  </div>
+                  <div class="notify-list">
+                    <div class="notify-avar" style="background: url(img/avar-1.jpg)"></div>
+                    <div class="notify-n-t">
+                      <div class="notify-name">
+                        <a href="#">Yushi Fukada</a>&nbsp;<span>follow you</span>
+                      </div>
+                      <span class="notify-time">10 days ago</span>
+                    </div>
+                    <div class="clear-both"></div>
+                  </div>
+                  <div class="notify-list">
+                    <div class="notify-avar" style="background: url(img/avar-1.jpg)"></div>
+                    <div class="notify-n-t">
+                      <div class="notify-name">
+                        <a href="#">Yushi Fukada</a>&nbsp;<span>follow you</span>
+                      </div>
+                      <span class="notify-time">10 days ago</span>
+                    </div>
+                    <div class="clear-both"></div>
+                  </div>
+                  <div class="notify-list">
+                    <div class="notify-avar" style="background: url(img/avar-1.jpg)"></div>
+                    <div class="notify-n-t">
+                      <div class="notify-name">
+                        <a href="#">Yushi Fukada</a>&nbsp;<span>follow you</span>
+                      </div>
+                      <span class="notify-time">10 days ago</span>
+                    </div>
+                    <div class="clear-both"></div>
+                  </div>
+                  <a class="notify-seemore" href="#">See more...</a>
+                </div>
+              </div>
+              <div class="user">
+                <div class="user-avar" style="background: url(img/avar-1.jpg)"></div>
+                <div class="user-name">Yamada Fukada Fukada</div>
+                <div class="user-dropdown">
+                  <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="clear-both"></div>
+      </div>
+</nav>
+<nav class="navbar-main">
+      <div class="container">
+        <div class="cat-title">Category</div>
+        <ul class="list-menu">
+            <li class="php selected"><a href="top.html">php</a></li>
+            <li class="css3"><a href="top.html">css3</a></li>
+            <li class="html"><a href="top.html">html</a></li>
+            <li class="ios"><a href="top.html">ios</a></li>
+            <li class="android"><a href="top.html">android</a></li>
+            <li class="ruby"><a href="top.html">ruby</a></li>
+            <li class="net"><a href="top.html">.net</a></li>
+            <li class="java"><a href="top.html">java</a></li>
+            <li class="unity"><a href="top.html">unity</a></li>
+            <li class="more"><a href="top.html">more...</a></li>
+        </ul>
+      </div>
+</nav>
+<div class="container">
+  <div class="post-detail row">
+    <div class="col-md-9 col-lg-9 post-left">
+      <div class="post-body">
+        <p class="post-title">Sweet Alert Plugin</p>
+        <div class="box-post-info">
+          <div class="btn-group">
+              <a class="btn-edit" href="#"></a>
+              <a class="btn-delete" href="#" style=""></a>
+          </div>
+          <p class="post-info">Posted on <span>2day</span> ago by <a href="#">Nguyen Van Giang</a></p>
+          <div class="clear-both"></div>
+        </div>
+        <div class="btn-group-user">
+          <a class="btn-edit" href="#"></a>
+          <a class="btn-delete" href="#" style=""></a>
+        </div>
+        <div class="post-text-content">
+
+
+          <section class="markdownContent cf">
+          <p><strong>Sweet Alert</strong> là một jquery plugin dùng để thay thế cho hộp thoai alert mặc định của javascript. Nó sẽ giúp bạn tô điểm cho website của bạn thêm lung linh hơn.</p>
+          <img src="http://static.webpie.net/files/11/_p/783/beautiful-javascript-alert-with-sweetalert.gif">
+            <p>Giả sử website của bạn cũng đẹp như <a href="ngheroi.com">Viblo</a> của <a href="framgia.com">Framgia</a> chúng tôi và bạn sử dụng alert mặc định của javascript:</p>
+            <button class="btn btn-detail alert-detail">alert detail</button>
+            <p>So với việc bạn sử dụng sweet alert:</p>
+            <button class="btn sweet-alert1"> Sweet alert </button>
+            <p>Đến đây bạn cũng đã hiểu lý do tại sao nên chọn sweet alert cho ứng dụng web của mình. Nó không chỉ có ưu điểm về giao diện vượt trội so với hộp thoại alert mặc định, mà cách cài đặt và như sử dụng cũng rất đơn giản:</p>
+            <h3><span id="Cài đặt"></span>Cài đặt</h3>
+            <ul>
+            <li><strong>Sử dụng Bower</strong>
+            <pre><code>$ bower install sweetalert</code></pre></li>
+            <li>
+            <p><strong>Cài đặt thông thường</strong></p>
+
+            <p></p>
+            <p>Download sweetalert <a href="https://github.com/t4t5/sweetalert/archive/master.zip">tại đây</a>, sau đó include vào website của bạn:</p>
+            <pre><code>&lt;script src=&quot;lib/sweet-alert.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;lib/sweet-alert.css&quot;&gt;</code></pre>
+
+            </li>
+            </ul>
+            <h3><span id="Sử dụng"></span>Sử dụng</h3>
+            
+            <p>Gọi phương thức swal</p>
+            <pre><code>
+            swal({
+               // Tham số : giá trị
+            });
+            </code></pre>
+            
+            <table class="table table-bordered">
+            <thead>
+            <tr>
+            <th>Tham số</th>
+            <th align="center">Giá trị mặc định</th>
+            <th align="left">Mô tả</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>title</td>
+            <td align="center">null (required)</td>
+            <td align="left">Tiêu đề hộp thoại alert</td>
+            </tr>
+            <tr>
+            <td>text</td>
+            <td align="center">null</td>
+            <td align="left">Mô tả hộp thoại alert</td>
+            </tr>
+            <tr>
+            <td>type</td>
+            <td align="center">null</td>
+            <td align="left">Loại alert: SweetAlert cung cấp 4 loại đã được xây dựng sẵn: "warning", "error", "success" và "info".</td>
+            </tr>
+            <tr>
+            <td>allowOutsideClick</td>
+            <td align="center">false</td>
+            <td align="left">Cho phép tắt bằng cách bấm ra ngoài hội thoại</td>
+            </tr>
+            <tr>
+            <td>showCancelButton</td>
+            <td align="center">false</td>
+            <td align="left">Hiển thị nút Cancel, dùng để đóng hộp thoại</td>
+            </tr>
+            <tr>
+            <td>confirmButtonText</td>
+            <td align="center">"OK"</td>
+            <td align="left">Thay đổi chữ cho nút Confirm. Nếu showCancelButton được đặt là true, thì sẽ đặt tự đồng là "Confirm" thay vì "OK".</td>
+            </tr>
+            <tr>
+            <td>confirmButtonColor</td>
+            <td align="center">"#AEDEF4"</td>
+            <td align="left">Thay đổi mầu nền của nút "Confirm" (giá trị HEX).</td>
+            </tr>
+            <tr>
+            <td>cancelButtonText</td>
+            <td align="center">"Cancel"</td>
+            <td align="left">Thay đổi chữ của nút "Cancel"</td>
+            </tr>
+            <tr>
+            <td>closeOnConfirm</td>
+            <td align="center">true</td>
+            <td align="left">Đặt false nếu bạn muốn hộp thoại tiếp tục mở khi người dùng bấm nút "Confirm". Chức năng này hữu dụng khi hàm callback gắn với nút Confirm gọi đến một hộp thoại SweetAlert khác.</td>
+            </tr>
+            <tr>
+            <td>closeOnCancel</td>
+            <td align="center">true</td>
+            <td align="left">Đặt false nếu bạn muốn hộp thoại tiếp tục mở khi người dùng bấm nút "Cancel". Chức năng này hữu dụng khi hàm callback gắn với nút Cancel gọi đến một hộp thoại SweetAlert khác.</td>
+            </tr>
+            <tr>
+            <td>imageUrl</td>
+            <td align="center">null</td>
+            <td align="left">Đường dẫn gắn hình ảnh iconcho hộp thoại</td>
+            </tr>
+            <tr>
+            <td>imageSize</td>
+            <td align="center">"80x80"</td>
+            <td align="left">Nếu imageUrl được thiết lập, bạn có thể đặt [rộng] x [cao] cho hình ảnh</td>
+            </tr>
+            </tbody>
+            </table>
+            <h3><span id="Ví dụ"></span>Ví dụ</h3>
+            <ol>
+            <li>Thông báo cơ bản
+            <p>
+            <button class="btn vd1"> Vi du 1 </button>
+            </p>
+            <pre><code>swal("Here's a message!")</code></pre></li>
+            <li>Thông báo với text phụ bên dưới
+            <p>
+            <button class="btn vd2"> Vi du 2 </button>
+            </p>
+            <pre><code>swal("Here's a message!", "It's pretty, isn't it?")</code></pre></li>
+            <li>Thông báo thành công
+            <p>
+            <button class="btn vd3"> Vi du 3 </button>
+            </p>
+            <pre><code>swal("Good job!", "You clicked the button!", "success")</code></pre></li>
+            <li>Thông báo tự đóng sau 2 giây
+            <p>
+            <button class="btn vd4"> Vi du 4 </button>
+            </p>
+<pre><code>swal({
+    title: "Auto close alert!",
+    text: "I will close in 2 seconds.",
+    timer: 2000 
+});</code></pre></li>
+            <li>Thông báo với nút xác nhận
+            <p>
+            <button class="btn vd5"> Vi du 5 </button>
+            </p>
+<pre><code>swal({
+      title: "Are you sure?",
+      text: "You will not be able to recover this imaginary file!",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Yes, delete it!",
+      cancelButtonText: "No, cancel plx!",
+      closeOnConfirm: false,
+      closeOnCancel: false },
+      function(isConfirm){
+          if (isConfirm) {
+              swal("Deleted!", "Your imaginary file has been deleted.", "success");
+          } else {
+              swal("Cancelled", "Your imaginary file is safe :)", "error");
+          }
+    });
+</code></pre></li>
+            <li>Thông báo với icon tùy chỉnh
+            <p>
+            <button class="btn vd6"> Vi du 6 </button>
+            </p>
+<pre><code>swal({
+    title: "Sweet!",
+    text: "Here's a custom image.",
+    imageUrl: "images/icon-sweet.jpg"
+});</code></pre></li>
+            <li>Xóa comment mẫu
+            <p>
+            Nhận ra ưu điểm nổi trội của Sweet alert, chúng tôi cũng đã quết định sử dụng plugin này thay cho hộp thoại alert mặc định của javascript, bạn có thể trải nhiệm thử bằng cách xóa các comment mẫu bên dưới bài viết này
+            </p>
+
+            </ol></section>
+
+
+
+        </div>
+      </div>
+      <div class="icon-like-share-social">
+        <img src="img/img-like.png">
+      </div>
+      <div class="bloger-like">
+        <button class="btn-favorite"></button>
+        <ul class="bloger-list">
+          <li><a href="#" style="background: url(img/avar-1.jpg)"></a></li>
+          <li><a href="#" style="background: url(img/pic-1.png)"></a></li>
+          <li><a href="#" style="background: url(img/pic-2.png)"></a></li>
+          <li><a href="#" style="background: url(img/pic-3.png)"></a></li>
+          <li><a href="#" style="background: url(img/pic-4.png)"></a></li>
+          <li><a href="#" style="background: url(img/pic-1.png)"></a></li>
+          <li><a href="#" style="background: url(img/avar-1.jpg)"></a></li>
+          <li><a href="#" style="background: url(img/pic-4.png)"></a></li>
+        </ul>
+        <span>favorite by <a href="#">50 bloger</a></span>
+        <div class="clear-both"></div>
+      </div>
+      <div class="box-comment">
+        <p class="title-comment">comment</p>
+        <div class="list-comment">
+          <div class="body-comment row" id="comment1">
+            <a class="ava-bloger" href="#" style="background: url(img/pic-1.png)"></a>
+            <div class="content-comment">
+              <p class="name-bloger-c">Nguyễn Văn Bá Hoài Anh<span>&nbsp;-&nbsp;</span><span class="date-time-comment">27/11/2014 13:15</span></p>
+              <p class="contribution">47 Contribution</p>
+              <div class="btn-group">
+                <a class="btn-edit" href="#"></a>
+                <a class="btn-delete" id="cmt1" style=""></a>
+              </div>
+              <p class="text-comment">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt, velit a tristique ultricies, magna diam lobortis lectus, ac sagittis lorem quam vel odio. Pellentesque dictum lorem nibh, quis rhoncus nulla vulputate eu. Curabitur ultricies dictum volutpat. Aliquam vel libero magna. Praesent id pellentesque mi, faucibus aliquet eros. Vivamus id odio quam. Etiam ut sapien bibendum, placerat urna sed, suscipit ipsum</p>
+            </div>
+          </div>
+          <div class="body-comment row">
+            <a class="ava-bloger" href="#" style="background: url(img/pic-2.png)"></a>
+            <div class="content-comment">
+              <p class="name-bloger-c">Nguyễn Văn Bá Hoài Anh<span>&nbsp;-&nbsp;</span><span class="date-time-comment">27/11/2014 13:15</span></p>
+              <p class="contribution">47 Contribution</p>
+              <p class="text-comment">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt, velit a tristique ultricies, magna diam lobortis lectus, ac sagittis lorem quam vel odio. </p>
+            </div>
+          </div>
+          <div class="body-comment row" id="comment2">
+            <a class="ava-bloger" href="#" style="background: url(img/pic-4.png)"></a>
+            <div class="content-comment">
+              <p class="name-bloger-c">Nguyễn Văn Bá Hoài Anh<span>&nbsp;-&nbsp;</span><span class="date-time-comment">27/11/2014 13:15</span></p>
+              <p class="contribution">47 Contribution</p>
+              <div class="btn-group">
+                <a class="btn-edit" href="#"></a>
+                <a class="btn-delete" id="cmt2" style=""></a>
+              </div>
+              <p  class="text-comment">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt, velit a tristique ultricies, magna diam lobortis lectus, ac sagittis lorem quam vel odio. Pellentesque dictum lorem nibh, quis rhoncus nulla vulputate eu. Curabitur ultricies dictum volutpat. </p>
+            </div>
+          </div>
+        </div>
+        <div class="write-comment">
+          <p>Add a new comment</p>
+          <textarea>Type text...</textarea>
+          <button>Img uploader</button>
+          <button>Comment</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3 post-right">
+      <div class="post-author">
+        <a href="#"><img src="img/blank.png"></a>
+        <a class="name" href="#">Trần Vũ Nguyên Lan Phương</a>
+        <div class="btn-post-follow">
+          <a class="col-lg-5" href="#">13 post</a>
+          <a class="col-lg-6" href="#">69 follow</a>
+          <div class="clear-both"></div>
+        </div>
+        <form class="btn-follow-author">
+          <button>Follow Category</button>
+        </form>
+        <div class="list-number-social">
+          <div class="row ">
+            <p class="co-xs-8 col-lg-8">Like</p>
+            <a class="co-xs-4 col-lg-4" href="#">69</a>
+          </div>
+          <div class="row">
+            <p class="col-lg-8">Share</p>
+            <a class="col-lg-4" href="#">93</a>
+          </div>
+          <div class="row">
+            <p class="col-lg-8">View</p>
+            <a class="col-lg-4" href="#">200</a>
+          </div>
+          <div class="row">
+            <p class="col-lg-8">Commentt</p>
+            <a class="col-lg-4" href="#">185</a>
+          </div>
+        </div>
+      </div>
+      <div class="author-tag">
+        <p>tags</p>
+        <a class="php" href="#">php</a>
+        <a class="html" href="#">html</a>
+        <a class="ios" href="#">.ios</a>
+        <a class="css3" href="#">css3</a>
+        <a class="android" href="#">android</a>
+        <a class="ruby" href="#">ruby</a>
+        <a class="java" href="#">java</a>
+        <a class="unity" href="#">unity</a>
+      </div>
+      <div class="box-more-post">
+        <p>more post</p>
+        <div class="list-more-post">
+          <div class="post-title">
+            <a href="#">Aenean ante leo, facilisis quis bi bendum eget, scelerisque </a>
+            <a class="name-author" href="#">Nguyen Thuy Duong&nbsp;-&nbsp;<span>22/11/2014</span></a>
+          </div>
+          <div class="post-title">
+            <a href="#">Aenean ante leo, facilisis quis bi bendum eget, scelerisque </a>
+            <a class="name-author" href="#">Nguyen Thuy Duong&nbsp;-&nbsp;<span>22/11/2014</span></a>
+          </div>
+          <div class="post-title">
+            <a href="#">Aenean ante leo, facilisis quis bi bendum eget, scelerisque </a>
+            <a class="name-author" href="#">Nguyen Thuy Duong&nbsp;-&nbsp;<span>22/11/2014</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="box-top-post">
+        <p>Top post</p>
+        <div class="list-top-post">
+          <div class="row top-post-detail">
+            <a class="col-md-4 col-lg-4 top-post-img" href="#"><img src="img/blank.png" style="background: url(img/pic-1.png)"></a>
+            <div class="col-md-8 col-lg-8 top-post-content">
+              <a href="#" class="title">Aenean ante leo, fac blisis quis bibendum</a>
+              <a href="#" class="name">Nguyen Thuy Duong</a>
+            </div>
+          </div>
+          <div class="row top-post-detail">
+            <a class="col-md-4 col-lg-4 top-post-img" href="#"><img src="img/blank.png" style="background: url(img/pic-4.png)"></a>
+            <div class="col-md-8 col-lg-8 top-post-content">
+              <a href="#" class="title">Aenean ante leo, fac blisis quis bibendum Aenean ante leo, fac blisis quis bibendum</a>
+              <a href="#" class="name">Nguyen Thuy Duong Lan ha  kkk kk</a>
+            </div>
+          </div>
+          <div class="row top-post-detail">
+            <a class="col-md-4 col-lg-4 top-post-img" href="#"><img src="img/blank.png" style="background: url(img/pic-2.png)"></a>
+            <div class="col-md-8 col-lg-8 top-post-content">
+              <a href="#" class="title">Aenean ante leo, fac blisis quis bibendum</a>
+              <a href="#" class="name">Nguyen Thuy Duong</a>
+            </div>
+          </div>
+          <div class="row top-post-detail">
+            <a class="col-md-4 col-lg-4 top-post-img" href="#"><img src="img/blank.png" style="background: url(img/pic-3.png)"></a>
+            <div class="col-md-8 col-lg-8 top-post-content">
+              <a href="#" class="title">Aenean ante leo, fac blisis quis bibendum</a>
+              <a href="#" class="name">Nguyen Thuy Duong</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="container">
+      <div class="icon-social-list">
+        <a href="top.html"><img class="icon-face" src="img/blank.png"></a>
+        <a href="top.html"><img class="icon-twit" src="img/blank.png"></a>
+        <a href="top.html"><img class="icon-g" src="img/blank.png"></a>
+        <a href="top.html"><img class="icon-rss" src="img/blank.png"></a>
+        <a href="top.html"><img class="icon-gifhub" src="img/blank.png"></a>
+      </div>
+      <div class="footer-right">
+        <a class="sign" href="top.html">Design <span>Framgia</span></a>
+        <a class="icon-top" href="#"><img src="img/blank.png"></a>
+      </div>
+    </div>
+  </foote
